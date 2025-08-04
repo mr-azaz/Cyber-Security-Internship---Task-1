@@ -1,0 +1,11 @@
+| **Service**        | **Port**  | **Potential Security Risks**                                                                                                                                                           |
+| ------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Domain (DNS)**   | 53        | - **DNS Spoofing / Cache Poisoning**: Attackers can redirect traffic by injecting false DNS records.
+                                   - **DNS Amplification DDoS Attacks**: If the server is misconfigured, it can be used as a DDoS reflector.
+                                   - **Information Leakage**: Poorly configured DNS servers may allow zone transfers, exposing internal domain structure.                                                                 |
+| **tcpwrapped**     | 80        | - **Service Obfuscation**: The service is hidden, but not necessarily secure. It might still be accessible under certain conditions.
+                                   - **False Sense of Security**: Just because Nmap can’t fingerprint the service doesn’t mean it’s protected.
+                                   - **Audit Required**: Admins should manually verify which service is behind tcpwrapped and ensure it's properly patched and access-controlled.
+| **ssl/tcpwrapped** | 443       | - **Undetected Vulnerabilities**: If the service is wrapped and SSL-protected, version info may be hidden, making vulnerability assessments harder.
+                                   - **SSL Misconfigurations**: If weak ciphers or expired certificates are used, traffic may still be intercepted.
+                                   - **Hidden Web Interfaces**: Services may expose sensitive admin pages (like routers, kiosks, IoT dashboards) behind HTTPS but are missed in scans due to SSL blocking fingerprinting. |
