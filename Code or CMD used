@@ -1,0 +1,45 @@
+## 🖥️ Commands Used
+
+### 🔹 **1. Find Local IP Range**
+
+Used to determine your subnet range:
+
+> ifconfig
+
+---
+
+### 🔹 **2. TCP SYN Scan with Version Detection**
+
+Scans all devices in the subnet using TCP SYN, and detects the version of services running on open ports:
+
+```
+> nmap -sS -sV 192.168.220.0/24
+```
+
+---
+
+### 🔹 **3. Save Output to a File**
+
+```
+> nmap -sS -sV 192.168.220.0/24 -oN task1_scan_result.txt
+```
+
+---
+
+### 🔹 **Wireshark Display Filters Used**
+
+These filters help you analyze packet behavior:
+
+| Filter                                     | What it Shows                      |
+| ------------------------------------------ | ---------------------------------- |
+| `ip.addr == 192.168.220.1`                 | All traffic to/from the target IP  |
+| `tcp.flags.syn == 1 && tcp.flags.ack == 0` | Outgoing SYN packets from Nmap     |
+| `tcp.flags.syn == 1 && tcp.flags.ack == 1` | SYN-ACK responses from open ports  |
+| `tcp.flags.reset == 1`                     | RST responses from closed ports    |
+| `tcp.flags.syn == 1`                       | Shows both SYN and SYN-ACK packets |
+| `tcp`                                      | All TCP traffic                    |
+| `udp`                                      | All UDP traffic                    |
+
+---
+
+
