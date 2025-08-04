@@ -1,0 +1,4 @@
+| Tool                                                       | Description                 | Purpose                                                                                             |
+| ---------------------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------- |
+| **Nmap** ([nmap.org](https://nmap.org))                    | Open-source network scanner | To detect active devices and discover open ports using TCP SYN scanning.                            |
+| **Wireshark** ([wireshark.org](https://www.wireshark.org)) | Network protocol analyzer   | To capture and inspect network packets during the scan and analyze SYN, SYN-ACK, and RST responses. |
