@@ -1,0 +1,38 @@
+# Nmap 7.95 scan initiated Mon Aug  4 15:15:28 2025 as: /usr/lib/nmap/nmap -sS -sV -oN task1_scan_result.txt 192.168.220.0/24
+Nmap scan report for 192.168.220.1
+Host is up (0.0077s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT    STATE    SERVICE        VERSION
+22/tcp  filtered ssh
+23/tcp  filtered telnet
+53/tcp  open     domain         dnsmasq 2.80
+80/tcp  open     tcpwrapped
+443/tcp open     ssl/tcpwrapped
+MAC Address: 8C:13:E2:0A:1E:6D (Unknown)
+
+Nmap scan report for 192.168.220.7
+Host is up (0.0087s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+1061/tcp filtered kiosk
+MAC Address: 9A:C1:0E:3D:91:B8 (Unknown)
+
+Nmap scan report for 192.168.220.8
+Host is up (0.012s latency).
+All 1000 scanned ports on 192.168.220.8 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: B4:C4:FC:A3:5E:06 (Xiaomi Communications)
+
+Nmap scan report for 192.168.220.10
+Host is up (0.00027s latency).
+All 1000 scanned ports on 192.168.220.10 are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: CC:47:40:EB:6F:D3 (AzureWave Technology)
+
+Nmap scan report for 192.168.220.11
+Host is up (0.0000030s latency).
+All 1000 scanned ports on 192.168.220.11 are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug  4 15:16:39 2025 -- 256 IP addresses (5 hosts up) scanned in 71.12 seconds
