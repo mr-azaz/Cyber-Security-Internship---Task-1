@@ -1,0 +1,20 @@
+Nmap scan report for 192.168.220.1
+PORT    STATE    SERVICE        VERSION
+22/tcp  filtered ssh
+23/tcp  filtered telnet
+53/tcp  open     domain         dnsmasq 2.80
+80/tcp  open     tcpwrapped
+443/tcp open     ssl/tcpwrapped
+
+Nmap scan report for 192.168.220.7
+PORT     STATE    SERVICE VERSION
+1061/tcp filtered kiosk
+
+Nmap scan report for 192.168.220.8
+Not shown: 1000 closed tcp ports (reset)
+
+Nmap scan report for 192.168.220.10
+Not shown: 1000 filtered tcp ports (no-response)
+
+Nmap scan report for 192.168.220.11
+Not shown: 1000 closed tcp ports (reset)
