@@ -13,7 +13,11 @@ The purpose of this task is to discover open ports on devices within the local n
 ---
 
 ## 🌐 IP Range Scanned
-
+192.168.220.1
+192.168.220.7
+192.168.220.8
+192.168.220.10
+192.168.220.11
 ---
 
 ## 📊 Nmap Scan Summary
@@ -28,6 +32,7 @@ Nmap was used to perform a **TCP SYN scan** across the local subnet. The followi
 
 > Output saved in: `task1_scan_result.txt`
 
+> Other ip scans are closed/blocked by Firewall.
 ---
 
 ## 📦 Wireshark Packet Analysis
